@@ -1,0 +1,20 @@
+<button type="button" id="sidebarCollapse" class="navbar-btn">
+	<span></span> <span></span> <span></span>
+</button>
+<nav id="sidebar">
+	<div class="sidebar-header">
+		<a href="/home.jsp"><img class="mx-auto d-block"
+		src="/img/Logo.png" width="100" height="100"></a>
+	</div>
+
+	<ul class="list-unstyled">
+		<li><a href="/anagrafica/anagrafica.jsp"> <i class="fa fa-clipboard-list" area-hidden="true"> Anagrafica </i></a></li>
+		<li><a href="#"> <i class="fa fa-chart-bar" area-hidden="true"> Interrogazioni </i></a></li>
+		<li><a href="#"> <i class="fa fa-boxes" area-hidden="true">Carichi di Magazzino </i></a></li>
+		<li><a href="#"> <i class="fa fa-exchange-alt" area-hidden="true"> Trasferimenti </i></a></li>
+		<li><a href="#"> <i class="fa fa-undo-alt" area-hidden="true"> Resi </i></a></li>
+		<li><a href="#"> <i class="fa fa-tablet-alt" area-hidden="true"> Ordini </i></a></li>
+		<li><a href="venditaAlBanco.html"> <i class="fa fa-cash-register" area-hidden="true"> Vendita al Banco </i></a></li>
+		<li><a href="#"> <i class="fa fa-users-cog" area-hidden="true"> Gestione Utenti </i></a></li>
+	</ul>
+</nav>

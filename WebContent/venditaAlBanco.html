@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>WH Management - Vendita al Banco</title>
+
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" type="text/css"
+	href="/bootstrap/css/bootstrap.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style-header.css">
+<link rel="stylesheet" type="text/css" href="/css/style-vendita.css">
+<script type="text/javascript" src="/js/function.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<p>
+		<h1>Vendita al Banco</h1>
+		<button class="icon-btn" id="home-btn"
+			onclick="location.href='home.jsp'">
+			<i class="fa fa-home fa-2x"></i>
+		</button>
+		<button class="icon-btn" id="userCollapse" onclick="collapse(user)">
+			<i class="fa fa-user-alt fa-2x"></i>
+		</button>
+		<button class="icon-btn" id="lock-btn" onclick="collapse(content)">
+			<i class="fa fa-lock fa-2x"></i>
+		</button>
+	</div>
+	<div id="content">
+		<div class="container-fluid">
+			<form id="search_form" action="" method="post">
+				<input type="text" id="src-bar" placeholder="EAN" required autofocus>
+				<button type="submit" id="src-btn">
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
+			<div class="row">
+				<div class="col col-md-2 bar" id="operation-bar">
+					<button class="bttn my-btn" id="yellow">Vendita</button>
+					<br>
+					<button class="bttn my-btn" id="orange">Chiusura Cassa</button>
+				</div>
+				<div class="col col-md-5" id="left-bar">
+					<div class="row">
+						<div class="col col-md-12 bar" id="main-bar"></div>
+						<div class="col col-md-12 bar" id="second-bar">
+							<button class="my-btn" id="aqua">Riprendi Scontrino</button>
+							<button class="my-btn" id="purple">Sospendi Scontrino</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4 bar" id="right-bar">
+					<div class="row">
+						<div class="col col-md-12" id="tastierino">
+							<input type="text" placeholder="calcoli" id="schermo-tastierino">
+						</div>
+					</div>
+					<div class="row buttons">
+						<div class="col col-md-3">
+							<button class="btn-tastierino my-btn">/</button>
+							<button class="btn-tastierino my-btn">1</button>
+							<button class="btn-tastierino my-btn">4</button>
+							<button class="btn-tastierino my-btn">7</button>
+							<button class="btn-tastierino my-btn">,</button>
+						</div>
+						<div class="col col-md-3">
+							<button class="btn-tastierino my-btn">*</button>
+							<button class="btn-tastierino my-btn">2</button>
+							<button class="btn-tastierino my-btn">5</button>
+							<button class="btn-tastierino my-btn">8</button>
+							<button class="btn-tastierino my-btn">0</button>
+						</div>
+						<div class="col col-md-3">
+							<button class="btn-tastierino my-btn">+</button>
+							<button class="btn-tastierino my-btn">3</button>
+							<button class="btn-tastierino my-btn">6</button>
+							<button class="btn-tastierino my-btn">9</button>
+							<button class="btn-tastierino my-btn">Storna</button>
+						</div>
+						<div class="col col-md-3">
+							<button class="btn-tastierino my-btn">-</button>
+							<button class="btn-tastierino my-btn">%</button>
+							<button class="btn-tastierino my-btn">Enter</button>
+							<button class="btn-tastierino my-btn" id="blue">Reso</button>
+						</div>
+					</div>
+					<div class="row buttons">
+						<div class="col col-md-12">
+							<button class="my-btn" id="green">Sub Totale</button>
+						</div>
+						<div class="col col-md-12">
+							<button class="my-btn" id="red">Elimina Scontrino</button>
+						</div>
+						<div class="col col-md-12">
+							<button class="my-btn" id="gray">Setting</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mask" id="user">
+				<ul class="list-unstyled">
+					<li><a href="index.html">Logout</a>
+					<li><a href="#">Profilo Utente</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>
+		<h5>DW Management &copy; 2020</h5>
+		<p>
+		<p>
+		<h6>Contatti: samuele.pirrotta@gmail.com</h6>
+		<p>
+	</div>
+
+	<!-- jQuery CDN - Slim version (=without AJAX) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<!-- Popper.JS -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+		integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+		crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+		integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+		crossorigin="anonymous"></script>
+
+	<!--  <script type="text/javascript">
+		$(document).ready(function() {
+			$('#userCollapse').on('click', function() {
+				$('#user').toggleClass('active');
+				$(this).toggleClass('active');
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#lock-btn').on('click', function() {
+				$('#content').toggleClass('active');
+				$(this).toggleClass('active');
+			});
+		});
+	</script>-->
+
+</body>
+
+</html>
